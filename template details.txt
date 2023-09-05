@@ -1,0 +1,2 @@
+1. color: #267CF2;
+2. background-color: white;
