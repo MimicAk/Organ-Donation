@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background:green;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background:#fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+    h1 {
+        font-size: 36px; 
+        color:red; 
+        font-weight: bold; 
+        text-align: center; 
+        text-decoration: underline; 
+    }
+
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .donor-form{
+    margin-bottom: 15px;
+    width:calc(100% / 2 - 20px) ;
+}
+.user-details .donor-form .text-input{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .donor-form input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #040303;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+}
+.user-details .donor-form input:focus,
+.user-details .donor-form input:valid{
+    border-color: #9b59b6;
+
+
+}
+input[type="radio"] {
+    /* Hide the default radio button */
+    display: none;
+  }
+.gen {
+    /* Style the label to resemble a custom radio button */
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+input[type="radio"]:checked + .gen {
+    background-color:green;
+    color: #fff;
+    border-color: green;
+  }
+  select {
+    background-color:green;
+    color: white;
+    border: 5px solid green;
+    padding: 5px;
+    font-size: 14px;
+    
+  }
+
+
+  input[type="checkbox"] {
+    display: none;
+  }
+  .check{
+    display: inline-block;
+    position: relative;
+    padding-left: 30px; 
+    cursor: pointer;
+  }
+  .check::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333; 
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input[type="checkbox"]:checked + .check::before {
+    background-color: green; 
+  }
+  
+  input[type="checkbox"]:checked + .check::before::after {
+    content: '✔'; 
+    font-size: 18px; 
+    color: green; 
+    position: absolute;
+    left: 3px; 
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+
+
+.register-button{
+    align-items: center;
+    margin-block-start: auto;
+    position: relative;
+}
+
+
+.register-button button{
+    height:20 px;
+    margin: 45px 0;
+    height: 50px;
+    width: 100px;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: green;
+
+}
+
+
+
+
+
+
+

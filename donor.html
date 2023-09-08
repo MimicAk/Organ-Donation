@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DonorCard </title>
+  <link rel="stylesheet" href="donor.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Donor Card</h1>
+  
+    <form id="my-form">
+       <div class="user-details">
+          <div class="donor-form">
+            <label for="text-input">Full Name  :</label>
+            <input type="text" id="text-input" name="name">
+          </div><br>
+  
+          <div class="donor-form">
+            <label for="username">Username    :</label>
+            <input type="text" id="username" name="username" >
+          </div><br>
+
+          <div class="donor-form">
+            <label for="password">Password    :</label>
+            <input type="password" id="password" name="password">
+          </div><br>
+
+          <div class="donor-form">
+            <label for="mobile-number">Mobile Number          :</label>
+            <input type="text" id="mobile-number" name="mobile-number" maxlength="18">
+          </div><br>
+
+          <div class="donor-form">
+            <label for="id">Donor ID       :</label>
+            <input type="number" id="ID" name="ID" maxlength="18">
+          </div><br>
+
+
+
+          <div class="donor-form">
+            <label for="dob">Date of Birth              :</label>
+            <input type="date" id="dob" name="dob">
+          </div><br>
+          <div class="donor-form">
+            <label for="age">Age                           :</label>
+            <input type="number" id="age" name="age">
+          
+          </div><br>
+          <div class="donor-form">
+            <label for="contact-number"> Emergency Contact Person:</label>
+            <input type="tel" id="contact-number" name="contact-number" placeholder="Phone Number">
+          </div><br>
+
+          <div class="donor-form">
+            <label for="text-input">Emergency Contact Address       :</label>
+            <input type="address" id="text-input" name="name">
+          </div><br>
+
+          
+          <div class="donor-form">
+            <label for="image">Upload image                :</label>
+            <input type="file" id="image" name="image">
+
+          </div><br>
+
+
+          
+          <div class="gender">
+            <label class="Gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label class="gen" for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label class="gen"  for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label class="gen" for="other">Other</label>
+  
+          </div><br>
+
+          
+          <br>
+          <div class="custom-select">
+            <label for="blood-group">Blood Group:</label>
+            <select id="blood-group" name="blood-group">
+              <option value="Select">-Select-</option>
+              <option value="A+">A+</option>
+             <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+          </div><br>
+
+          <div>
+            <label class="organ" for="organs">Organs                  :</label><br><br>
+            
+            <input type="checkbox" id="checkbox1">
+            <label  class="check"  for="checkbox1">Corneas(Eyes)</label>
+            <input type="checkbox" id="checkbox2">
+            <label  class="check"  for="checkbox2">Lungs</label>
+            <input type="checkbox" id="checkbox3">
+            <label  class="check"  for="checkbox3">Liver</label>
+            <input type="checkbox" id="checkbox4">
+            <label  class="check"  for="checkbox4">Kidneys</label>
+            <input type="checkbox" id="checkbox5">
+            <label  class="check"  for="checkbox5">Heart</label>
+          </div><br>
+
+
+    
+      
+          
+        </div>
+
+
+          <div class="register-button">
+            <input type="submit" value="register">Register</button>
+          </div>
+
+      </div>
+
+    </form>
+  </div>
+  <script src="donor.js"></script>
+</body>
+</html>
