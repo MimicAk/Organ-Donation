@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Register</title>
+
+    <style>
+        body{
+        border: 0;
+        outline: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .heds {
+        margin-top: 50px;
+        
+    }
+    .heds h1{
+        width: 45%;
+        height: 80px;
+        text-align: center;
+        margin-bottom: 60px;
+        margin-left: 28%;
+        text-shadow: -2px 2px 4px rgb(155, 46, 46);
+        border: 3px solid rgb(128, 126, 126);
+        box-shadow: -2px 2px 10px 2px ;
+        border-radius: 5px;
+        margin-top: 8px;
+        color: rgb(226, 43, 43);
+        font-weight: 900;
+        font-size: 50px;
+    }
+    .details1{
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .details1 h2{
+        border: 2px solid  rgb(142, 172, 98);
+        background-color: rgb(67, 136, 58);
+        text-shadow: -2px 1px 3px rgb(142, 172, 98);
+        border-radius: 5px;
+        padding: 10px;
+        color: whitesmoke;
+    }
+    .frm{
+        width: 80%;
+        margin-left: 110px;
+        border-radius: 15px;
+        border: 2px solid rgb(142, 172, 98);
+        box-shadow: -3px 3px 10px 4px rgb(120, 136, 97);
+    }
+    .tbls{
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+    .names{
+        font-size: 20px;
+        color: rgb(80, 56, 56);
+    }
+    .inp{
+        margin-left: 190px;
+        padding: 15px 10px;
+        height: 15px;
+        width: 300px;
+        border-radius: 5px;
+        border: 2px solid seagreen;
+        margin-bottom: 8px;
+    }
+    .inp1{
+        margin-left: 190px;
+        margin-bottom: 8px;
+        border-radius: 5px;
+        width: 323px;
+        border: 2px solid rgb(234, 137, 25);
+        padding: 10px;
+    }
+    /*second form*/
+    .details2 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .details2 h2{
+        border: 2px solid  rgb(142, 172, 98);
+        background-color: rgb(67, 136, 58);
+        text-shadow: -2px 1px 3px rgb(142, 172, 98);
+        border-radius: 5px;
+        padding: 10px;
+        color: whitesmoke;
+    }
+    .frm2{
+        width: 80%;
+        margin-left: 110px;
+        border-radius: 15px;
+        border: 2px solid rgb(142, 172, 98);
+        box-shadow: -3px 3px 10px 4px rgb(120, 136, 97);
+    }
+    .tbls2{
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    .names1{
+        font-size: 20px;
+        color: rgb(80, 56, 56);
+    }
+    .inp2{
+        margin-left: 30px;
+        padding: 15px 10px;
+        height: 15px;
+        width: 300px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 2px solid seagreen;
+        margin-bottom: 8px;
+    }
+    .radio1{
+        margin-left: 110px;
+    }
+    /* form 3*/
+    .details3 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .details3 h2{
+        border: 2px solid  rgb(142, 172, 98);
+        background-color: rgb(67, 136, 58);
+        text-shadow: -2px 1px 3px rgb(142, 172, 98);
+        border-radius: 5px;
+        padding: 10px;
+        color: whitesmoke;
+    }
+    .frm3{
+        width: 80%;
+        margin-left: 110px;
+        border-radius: 15px;
+        border: 2px solid rgb(142, 172, 98);
+        box-shadow: -3px 3px 10px 4px rgb(120, 136, 97);
+    }
+    .tbls3{
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 80px;
+        
+    }
+    .names2{
+        font-size: 20px;
+        color: rgb(80, 56, 56);
+    }
+    .inp3{
+        margin-left: 300px;
+        padding: 15px 10px;
+        height: 15px;
+        width: 300px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 2px solid seagreen;
+        margin-bottom: 8px;
+    }
+    .btn{
+        padding: 0px 35px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 470px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+        border: 1px solid  rgb(244, 152, 54);
+        background-color: rgb(241, 140, 32);
+        box-shadow: -3px 2px 5px 2px rgb(121, 85, 47);
+        text-shadow: -2px 1px 5px rgb(121, 85, 47);
+        color: whitesmoke;
+        cursor: pointer;
+    }
+    @media only screen and (max-width:412px){
+        .heds h1{
+            margin-top: -10px;
+            padding-top: 15px;
+            height: 70px;
+            font-size: 30px;
+            width: 300px;
+            margin-left: 45px;
+        }
+        .frm{
+            width: 390px;
+            box-shadow: -1px 1px 3px ;
+            margin-left: 1px; 
+            border: 2px solid rgb(142, 172, 98);
+            box-shadow: -1px 1px 5px 4px rgb(120, 136, 97);
+        }
+        .names{
+            margin-top: -30px;
+            display: block;
+            font-size: 18px;
+            text-align: center;
+            width: 200px;
+            margin-left: 60px;
+            
+        }
+        .inp1{
+            margin-left: -265px;
+            padding: 10px 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            height: 40px;
+            width: 325px;
+            border-radius: 5px;
+
+        }
+        .inp{
+            margin-left: -265px;
+            padding: 10px 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            height: 15px;
+            width: 300px;
+            border-radius: 5px;
+        }
+        /* from 2*/
+        .frm2{
+            width: 390px;
+            box-shadow: -1px 1px 3px ;
+            margin-left: 1px; 
+            border: 2px solid rgb(142, 172, 98);
+            box-shadow: -1px 1px 5px 4px rgb(120, 136, 97);
+        }
+        .names1{
+            margin-top: -30px;
+            display: block;
+            margin-bottom: 80px;
+            font-size: 18px;
+            text-align: center;
+            width: 250px;
+            margin-left: 50px; 
+        }
+        .inp2{
+            margin-left: -295px;
+            padding: 10px 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            height: 15px;
+            width: 300px;
+            border-radius: 5px;
+        }
+        .radio1{
+            display: inline-block;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            margin-left: -115px;
+            
+        }
+        /*form 3*/
+        .frm3{
+            width: 390px;
+            box-shadow: -1px 1px 3px ;
+            margin-left: 1px; 
+            border: 2px solid rgb(142, 172, 98);
+            box-shadow: -1px 1px 5px 4px rgb(120, 136, 97);
+        }
+        .names2{
+            margin-top: -30px;
+            display: block;
+            margin-bottom: 80px;
+            font-size: 18px;
+            text-align: center;
+            width: 250px;
+            margin-left: 20px; 
+        }
+        .inp3{
+            margin-left: -295px;
+            padding: 10px 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            height: 15px;
+            width: 300px;
+            border-radius: 5px;
+        }
+        .btn{
+            margin-left: 130px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="heds">
+        <h1>Register Hospital</h1>
+    </div>
+    <div class="details1">
+        <h2>Add Hospital Details</h2>
+    </div>
+    <div class="inputs">
+        <form class="frm">
+            <table class="tbls">
+                <tr>
+                    <td class="names">UserName</td><td><input class="inp" type="text" id="user" ></td>
+                </tr>
+                <tr>
+                    <td class="names">Password </td><td> <input class="inp" type="password" id="Password"></td>
+                </tr>
+                <tr>
+                    <td class="names">Name of the Hospital </td><td> <input class="inp" type="text" id="Hospital"></td>
+                </tr>
+                <tr>
+                    <td class="names">Hospital Location </td><td> <input class="inp" type="text" id="Address"></td>
+                </tr>
+                <tr>
+                    <td class="names">state </td><td><select class="inp1" name="select" id="select">
+                        <option value="TamilNadu">TamilNadu</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td class="names">city </td><td><select class="inp1" name="select" id="select1">
+                        <option value="Chennai">Chennai</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Tiruchirappalli">Tiruchirappalli</option>
+                        <option value="Salem">Salem</option>
+                        <option value="Ambattur">Ambattur</option>
+                        <option value="Tirunelveli">Tirunelveli</option>
+                        <option value="Tiruppur">Tiruppur</option>
+                        <option value="Avadi">Avadi</option>
+                        <option value="Tiruvottiyur">Tiruvottiyur</option>
+                        <option value="Thoothukkudi">Thoothukkudi</option>
+                        <option value="Nagercoil">Nagercoil</option>
+                        <option value="Thanjavur">Thanjavur</option>
+                        <option value="Pallavaram">Pallavaram</option>
+                        <option value="Dindigul">Dindigul</option>
+                        <option value="Vellore">Vellore</option>
+                        <option value="Tambaram">Tambaram</option>
+                        <option value="Cuddalore">Cuddalore</option>
+                        <option value="Kancheepuram">Kancheepuram</option>
+                        <option value="Alandur">Alandur</option>
+                        <option value="Erode">Erode</option>
+                        <option value="Tiruvannamalai">Tiruvannamalai</option>
+                        <option value="Kumbakonam">Kumbakonam</option>
+                        <option value="Rajapalayam">Rajapalayam</option>
+                        <option value="Kurichi">Kurichi</option>
+                        <option value="Madavaram">Madavaram</option>
+                        <option value="Pudukkottai">Pudukkottai</option>
+                        <option value="Hosur">Hosur</option>
+                        <option value="Ambur">Ambur</option>
+                        <option value="Karaikkudi">Karaikkudi</option>
+                        <option value="Neyveli">Neyveli</option>
+                        <option value="Nagapattinam">Nagapattinam</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td class="names">Phone.No </td><td> <input class="inp" type="text" id="Phone"></td>
+                </tr>
+                <tr>
+                    <td class="names">Hospital Fax Number </td><td> <input class="inp" type="text" id="Number"></td>
+                </tr>
+                <tr>
+                    <td class="names">Name of the Hospital director</td><td> <input class="inp" type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td class="names">Director Mobile.No </td><td> <input class="inp" type="text" id="Number"></td>
+                </tr>
+                <tr>
+                    <td class="names">Director E-Mail ID</td><td> <input class="inp" type="email" id="id"></td>
+                </tr>
+                <tr>
+                    <td class="names">Hospital E-Mail ID </td><td> <input class="inp" type="email" id="id"></td>
+                </tr>
+                <tr>
+                    <td class="names">Hospital Website Address </td><td> <input class="inp" type="text" id="Website"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="details2">
+        <h2>License Details</h2>
+    </div>
+    <div class="inputs1">
+        <form class="frm2">
+            <table class="tbls2">
+                <tr>
+                    <td class="names1">Is Your Transplant Registration License Active?</td><td>
+                        <input class="radio1" type="radio" name="rdo">Yes 
+                        <input class="radio1" type="radio" name="rdo">No
+                    </td>
+                </tr>
+                <tr>
+                    <td class="names1">License Expiry Date</td><td><input class="inp2"  type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names1">Cetificate Number</td><td><input class="inp2"  type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names1">Name of the Transplant Coordinator</td><td><input class="inp2"  type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names1">Tx Mobile No (Numbers Should Be Accessible 24/7)</td><td><input class="inp2"  type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names1">Tx Email ID </td><td><input class="inp2"  type="text"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="details3">
+        <h2>Consultants Details</h2>
+    </div>
+    <div class="inputs2">
+        <form class="frm3">
+            <table class="tbls3">
+                <tr>
+                    <td class="names2">Consultant</td><td><input class="inp3" type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names2">Mobile.No 1 </td><td> <input class="inp3" type="text" id="Phone"></td>
+                </tr>
+                <tr>
+                    <td class="names2">Mobile.No 2</td><td> <input class="inp3" type="text" id="Phone"></td>
+                </tr>
+            </table>
+            <div>
+                <td><button class="btn">Submit</td>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
