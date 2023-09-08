@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_Btn</title>
+
+    <style>
+        body{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: black;
+        }
+        div .frm{
+            border: 1px solid rgb(13, 13, 13);
+            box-shadow: 0 0 10px 3px rgb(108, 185, 188);
+            width: 800px;
+            margin-top: 23px;
+            margin-left: 140px;
+            border-radius: 20px;
+            background-color: rgb(13, 13, 13);
+        }
+        .admin h1{
+            width: 200px;
+            padding: 10px 10px;
+            color: whitesmoke;
+            align-items: center;
+            text-align: center;
+            border-radius: 5px;
+            background-color:chocolate;
+            border: 1px solid chocolate;
+            box-shadow: -2px 2px 8px 3px rgb(145, 68, 14);
+            text-shadow: -1px 1px 3px ;
+            margin-left: 36%;
+            margin-top: 50px;
+        }
+        .btns {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 150px; 
+            margin-bottom: 60px;
+        }
+        .btn1{
+            background-color: rgb(21, 170, 5);
+            color: whitesmoke;
+            height: 55px;
+            width: 150px;
+            border-radius: 5px;
+            text-shadow: -1px 1px 2px ;
+            box-shadow: 0px 0px 5px rgb(36, 111, 28),0 0 10px rgb(21, 170, 5);
+            border: 1px solid rgb(21, 170, 5);
+            font-size: 25px;
+            cursor:pointer;
+        }
+        .btn1:hover{
+            box-shadow: 0px 0px 5px rgb(38, 151, 26),
+            0 0 10px rgb(21, 170, 5),
+            0 0 20px rgb(21, 170, 5);
+        }
+        .btn2{
+            background-color: rgb(222, 30, 17);
+            color: whitesmoke;
+            height: 55px;
+            width: 150px;
+            border-radius: 5px;
+            text-shadow: -1px 1px 2px ;
+            box-shadow: -3px 2px 4px 2px rgb(136, 28, 20),0 0 10px rgb(222, 30, 17);
+            border: 1px solid rgb(222, 30, 17);
+            font-size: 25px;
+            margin-left: 80px;
+            cursor:pointer;
+        }
+        .btn2:hover{
+            box-shadow: 0px 0px 5px rgb(222, 30, 17),
+            0 0 10px rgb(222, 30, 17),
+            0 0 20px rgb(222, 30, 17);
+        }
+        .btn3{
+            background-color: rgb(55, 55, 195);
+            color: whitesmoke;
+            height: 55px;
+            width: 150px;
+            border-radius: 5px;
+            text-shadow: -1px 1px 2px ;
+            box-shadow: -3px 2px 4px 2px rgb(27, 27, 90),0 0 10px rgb(55, 55, 195);
+            border: 1px solid rgb(55, 55, 195);
+            font-size: 25px;
+            margin-left: 80px;
+            cursor:pointer;
+        }
+        .btn3:hover{
+            box-shadow: 0px 0px 5px rgb(55, 55, 195),
+            0 0 10px rgb(55, 55, 195),
+            0 0 20px rgb(55, 55, 195);
+        }
+        .name h4{
+            color: whitesmoke;
+            margin-left: 250px;
+            font-size: 20px;
+            text-shadow: -1px 1px 2px;
+        }
+        .logout a{
+            position: absolute;
+            text-decoration: none;
+            left: 78%;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-weight: 900;
+            border: 2px solid blueviolet;
+            background-color:blueviolet;
+            box-shadow: 0 0 -3px 2px 4px 2px blueviolet ,0px 0px 5px blueviolet;
+            color: whitesmoke;
+            padding: 5px 8px;
+        }
+        .logout a:hover{
+            box-shadow: 0px 0px 5px blueviolet,
+            0 0 10px blueviolet,
+            0 0 20px blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form class="frm">
+            <div class="logout">
+                <a href="#" target="_blank">Logout</a>
+            </div>
+            <div class="admin">
+                <h1>Admin</h1>
+            </div>
+            <div class="name">
+                <h4>Welcome Admin</h4>
+            </div>
+            <div class="btns">
+                <button class="btn1">Hospital</button>
+                <button class="btn2">Donor</button>
+                <button class="btn3">Patient</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
