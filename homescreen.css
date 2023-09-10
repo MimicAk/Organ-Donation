@@ -96,8 +96,9 @@ a:hover{
 
 
 .main-content {
-    flex-grow: 5; /* Grow to fill available space */
-    padding: 500px; /* Adjust padding as needed */
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Grow to fill available space */
 }
 
 /* Footer */
