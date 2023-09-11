@@ -188,24 +188,24 @@
             </div>
             <table class="tbls">
                 <tr>
-                    <td class="names">UserName</td><td><input class="inp" type="text"></td>
+                    <td class="names">UserName</td><td><input class="inp" name="username" type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names">Password </td><td> <input class="inp" type="password"></td>
+                    <td class="names">Password </td><td> <input class="inp" name="password" type="password"></td>
                 </tr>
                 <tr>
-                    <td class="names">Name of the Hospital </td><td> <input class="inp" type="text"></td>
+                    <td class="names">Name of the Hospital </td><td> <input class="inp" name="hospital_name" type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names">Hospital Location </td><td> <input class="inp" type="text"></td>
+                    <td class="names">Hospital Location </td><td> <input class="inp" name="hospitak_location" type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names">state </td><td><select class="inp1" name="select">
-                        <option value="TamilNadu">TamilNadu</option>
+                    <td class="names">state </td><td><select class="inp1" name="state">
+                        <option value="TamilNadu">Tamil Nadu</option>
                     </select></td>
                 </tr>
                 <tr>
-                    <td class="names">District</td><td><select class="inp1" name="select">
+                    <td class="names">District</td><td><select class="inp1" name="district">
                         <option value="Ariyalur">Ariyalur</option>
                         <option value="Chengalpattu">Chengalpattu</option>
                         <option value="Chennai">Chennai</option>
@@ -246,25 +246,25 @@
                     </select></td>
                 </tr>
                 <tr>
-                    <td class="names">Phone.No </td><td> <input class="inp" type="text"></td>
+                    <td class="names">Phone.No </td><td> <input class="inp" name="phone_no" type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names">Hospital Fax Number </td><td> <input class="inp" type="text"></td>
+                    <td class="names">Hospital Fax Number </td><td> <input class="inp" name="fax_number" type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names">Name of the Hospital director</td><td> <input class="inp" type="text"></td>
+                    <td class="names">Name of the Hospital director</td><td> <input class="inp" name="hospital_director" type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names">Director Mobile.No </td><td> <input class="inp" type="text"></td>
+                    <td class="names">Director Mobile.No </td><td> <input class="inp" name="director_mobile" type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names">Director E-Mail ID</td><td> <input class="inp" type="email"></td>
+                    <td class="names">Director E-Mail ID</td><td> <input class="inp" name="director_email" type="email"></td>
                 </tr>
                 <tr>
-                    <td class="names">Hospital E-Mail ID </td><td> <input class="inp" type="email"></td>
+                    <td class="names">Hospital E-Mail ID </td><td> <input class="inp" name="hospital_email" type="email"></td>
                 </tr>
                 <tr>
-                    <td class="names">Hospital Website Address </td><td> <input class="inp" type="text"></td>
+                    <td class="names">Hospital Website Address </td><td> <input class="inp" name="website_url" type="text"></td>
                 </tr>
             </table>
             <div class="details2">
@@ -273,24 +273,24 @@
             <table class="tbls2">
                 <tr>
                     <td class="names1">Is Your Transplant Registration License Active?</td><td>
-                        <input class="radio1" type="radio" name="rdo">Yes 
-                        <input class="radio1" type="radio" name="rdo">No
+                        <input class="radio1" type="radio" value="1" name="active_license">Yes 
+                        <input class="radio1" type="radio" value="0" name="active_license">No
                     </td>
                 </tr>
                 <tr>
-                    <td class="names1">License Expiry Date</td><td><input class="inp2"  type="text"></td>
+                    <td class="names1">License Expiry Date</td><td><input class="inp2" name="license_exp_date"  type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names1">Cetificate Number</td><td><input class="inp2"  type="text"></td>
+                    <td class="names1">Certificate Number</td><td><input class="inp2" name="certificate_number" type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names1">Name of the Transplant Coordinator</td><td><input class="inp2"  type="text"></td>
+                    <td class="names1">Name of the Transplant Coordinator</td><td><input class="inp2" name="trp_coordinator_name"  type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names1">Tx Mobile No (Numbers Should Be Accessible 24/7)</td><td><input class="inp2"  type="text"></td>
+                    <td class="names1">Tx Mobile No (Numbers Should Be Accessible 24/7)</td><td><input class="inp2" name="trp_coordinator_mobile"  type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names1">Tx Email ID </td><td><input class="inp2"  type="text"></td>
+                    <td class="names1">Tx Email ID </td><td><input class="inp2" name="trp_coordinator_email"  type="text"></td>
                 </tr>
             </table>
             <div class="details3">
@@ -298,21 +298,20 @@
             </div>
             <table class="tbls3">
                 <tr>
-                    <td class="names2">Consultant</td><td><input class="inp3" type="text"></td>
+                    <td class="names2">Consultant 1 Name</td><td><input class="inp3" name="consultant1_name" type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names2">Mobile.No 1 </td><td> <input class="inp3" type="text"></td>
+                    <td class="names2">Mobile.No</td><td> <input class="inp3" name="consultant1_mobile" type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names2">Mobile.No 2</td><td> <input class="inp3" type="text"></td>
+                    <td class="names2">Consultant 2 Name</td><td><input class="inp3" name="consultant2_name" type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names2">Mobile.No</td><td> <input class="inp3" name="consultant2_mobile" type="text"></td>
                 </tr>
             </table>
             <div>
-<<<<<<< HEAD
                 <td><button type="submit" class="btn">Submit</td>
-=======
-                <button class="btn">Submit</button>
->>>>>>> 5756879a9f32d54125014ba5c9fbb53027e60a0b
             </div>
         </form>
     </div>
