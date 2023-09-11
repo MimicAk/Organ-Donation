@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospage</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background:linear-gradient( to left,lavender ,rgb(96, 187, 168), rgb(223, 147, 238)) ;
+        }
+        .form{
+            width: 100%;
+        }
+        .form div.LogouT{
+            margin-top: 30px;
+            margin-left: 85%;
+        }
+        .form a{
+            border: 1px solid black;
+            padding:7px 15px;
+            font-size: 18px;
+            text-decoration: none;
+            color: rgb(112, 111, 111);
+            border-radius: 50px;
+            transition: all ease-in-out .5s;
+        }
+        .form a:hover{
+            background-color: hotpink;
+            color: whitesmoke;
+        }
+        .HPname{
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        .HPname h2{
+            color: rgb(37, 39, 37);
+        }
+        .upd-btn{
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+        .upbtn{
+            padding: 8px 10px;
+            border-radius: 50px;
+            color: rgb(51, 49, 49);
+            border: 1px solid black;
+            cursor: pointer;
+            transition: all ease-in .3s;
+        }
+        .upbtn:hover{
+            color: whitesmoke;
+            background: rgb(59, 127, 231);
+            border: 1px solid rgb(59, 127, 231);
+        }
+        .btns{
+            margin-top: -200px;
+            margin-left: 60%;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid rgb(66, 205, 191);
+            border-radius: 10px;
+            box-shadow: -1px 1px 4px 3px rgb(86, 162, 155);
+        }
+        .btn1{
+            background-color: transparent;
+            width: 65%;
+            padding: 10px 0 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 30px;
+            color: rgb(82, 81, 81);
+            margin-left:60px;
+            border:1px solid black;
+            position: relative;
+            transition: all ease-in .5s;
+        }
+        .btn1::before{
+            content: "";
+            position: absolute;
+            background-color: coral;
+            border-radius:5px;
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .5s;
+        }
+        .btn1:hover{
+            color:whitesmoke;
+        }
+        .btn1:hover:before{
+            width: 100%;
+        }
+        .btn2{
+            background-color: transparent;
+            width: 65%;
+            padding: 10px 0 10px 0;
+            border-radius: 5px;
+            color: rgb(82, 81, 81);
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-left:60px;
+            border:1px solid black;
+            position: relative;
+            transition: all ease-in .5s;
+        }
+        .btn2::before{
+            content: "";
+            position: absolute;
+            background-color: mediumpurple;
+            border-radius:5px;
+            width: 0;
+            height: 100%;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            transition: all .5s;
+        }
+        .btn2:hover{
+            color:whitesmoke;
+        }
+        .btn2:hover:before{
+            width: 100%;
+        }
+        .btn3{
+            background-color: transparent;
+            width: 65%;
+            padding: 10px 0 10px 0;
+            border-radius: 5px;
+            color: rgb(82, 81, 81);
+            font-size: 18px;
+            margin-top: 30px;
+            cursor: pointer;
+            margin-left:60px;
+            margin-bottom: 30px;
+            border:1px solid black;
+            position: relative;
+            transition: all ease-in .5s;
+        }
+        .btn3::before{
+            content: "";
+            position: absolute;
+            background-color: mediumseagreen;
+            border-radius:5px;
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .5s;
+        }
+        .btn3:hover{
+            color:whitesmoke;
+        }
+        .btn3:hover:before{
+            width: 100%;
+        }
+        .msg {
+            margin-top:100px;
+            margin-left: 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 300px;
+            background: linear-gradient(rgb(225, 177, 251),rgb(239, 157, 243));
+            
+        }
+        .marq{
+            padding: 0 10px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="LogouT">
+           <a href="#">Logout</a>
+        </div>
+        <div class="HPname">
+           <h2>Hospital Name :</h2>
+        </div>
+        <div class="upd-btn">
+           <button class="upbtn" name="update-btn">Update Hospital Details</button>
+        </div>
+        <div class="msg">
+            <marquee class="marq" direction="up" height="100px">Yooo.....!!!! Watssupp dude....^-^</marquee>
+            
+        </div>
+        <div class="btns">
+           <button class="btn1">Register a New Patient</button>
+           <button class="btn2">Check Active Donor</button>
+           <button class="btn3">Verify Medical record of Donor</button>
+        </div>
+       
+    </div>
+</body>
+</html>
