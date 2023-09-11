@@ -6,7 +6,7 @@ main{
     margin: 100px 0px;
     width:fit-content;
     display: flex;
-    gap: 50px;
+    gap: 40px;
     box-sizing: border-box; 
 }
 ::-webkit-scrollbar{ 
@@ -26,7 +26,7 @@ main{
 .container{
     display: inline-block;
     height: fit-content;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: 0px solid rgb(29, 28, 28);
     border-radius: 14px;
     box-shadow: 0px 0px 5px 2px black;
@@ -43,13 +43,14 @@ main{
     border-bottom: 1px solid lightgray;
 }
 .container-row-1>h3{
-    padding: 0px 0px;
+    padding: 0px;
     font-size: 19px;
     font-weight: 700; 
     font-family: inherit;
 }
 .container-row-2>th>h4{
-    padding: 10px 50px 10px 10px;
+    padding: 10px 40px 10px 10px;
+    width: max-content;
     font-family: inherit;
     color: black;
     font-size: 17px;
@@ -58,18 +59,19 @@ main{
 .container-row-2>th{
     border-bottom: 0.5px solid lightgray;
 }
-.container-row-2>th>h4:nth-child(5){
-    padding: 10px 50px 30px 0px;
-    font-family: inherit;
-    color: black;
-    font-size: 17px;
-    font-weight: 700;
-}
 .container-row-2{
     border-bottom: 1px solid lightgray;
 }
 .container-row-3>td{
     padding: 40px 10px;
+    font-family: inherit;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.container-row-3>td:last-child{
+    padding: 40px 0px 40px 10px;
+    display: inline-block;
     font-family: inherit;
     color: black;
     font-size: 14px;
