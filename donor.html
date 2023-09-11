@@ -11,7 +11,6 @@
       font-family: Arial, sans-serif;
   }
   body {
-      display: flex;
       height: 100vh;
       justify-content: center;
       align-items: center;
@@ -36,7 +35,6 @@
   
   
   .container form .user-details{
-      display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 20px 0 12px 0;
@@ -101,14 +99,12 @@
       display: none;
     }
     .check{
-      display: inline-block;
       position: relative;
       padding-left: 30px; 
       cursor: pointer;
     }
     .check::before {
       content: "";
-      display: inline-block;
       width: 20px;
       height: 20px;
       border: 2px solid #333; 
@@ -160,49 +156,6 @@
   <link rel="stylesheet" href="homescreen.css" />
 </head>
 <body>
-  <header class="header" role="banner" id="top">
-        
-    <div class="nav-image">
-        <img src="./homescr-img/nav-img.jpg" width="1340px" height="350px">
-        <div class="top-left">
-            <div>
-                <a href="#Login/register" class="login">Login/Register</a>
-            </div>
-        </div>
-        <div class="top-right">Toll Free Organ Donation Helpline : 1800 103 7100</div>
-        <div class="centered">Organ Transplant</div>
-        <div id="bottom" class="bottom-left">
-            <div class="homepage-img">
-                <img src="./homescr-img/donate.png">
-             </div>
-        </div>
-
-        
-        
-        
-    </div>
-
-    <div class="navg">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#Home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About Us</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact Us</a>
-          </li>
-          <li class="nav__item">
-            <a href="#feedback" class="nav__link">Feedback</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-</header>
-
-<div class="main-content">
-    <!-- Your page content goes here -->
     <div class="container">
       <h1>Donor Card</h1>
     
@@ -307,10 +260,6 @@
               <input type="checkbox" id="checkbox5">
               <label  class="check"  for="checkbox5">Heart</label>
             </div><br>
-  
-  
-      
-        
             
           </div>
   
@@ -323,25 +272,6 @@
   
       </form>
     </div>
-</div>
-
-<!-- Footer Section -->
-
-<div class="footer">
-    <p></p>
-    <h1>Contact Us</h1>
-        <p>Principal, Organ Donation
-            +91 00000000000 / +91 00000000
-            </p>
-
-
-    
-    <p>   &copy;Designed & Developed by MUAT <br>
-        For any questions please contact</p></p>
-</div>
-
-
-
  
 </body>
 </html>
