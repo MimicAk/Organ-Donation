@@ -6,8 +6,6 @@ body{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 80px;
-    width: 100%;
-    height: 100%;
 }
 .contact-head h2{
     border: 2px solid  rgb(142, 172, 98);
@@ -16,26 +14,20 @@ body{
     border-radius: 5px;
     padding: 10px;
     color: whitesmoke;
-    width: 100%;
-    top: 0;
-    
+    margin-left: 0px; 
 }
-
 .con-details{
-    right:50%;
-
+    width: 900px;
+    margin-left: 90px;
+    border-radius: 10px;
     align-items: center;
-    width: 100%;
     box-shadow: -1px 1px 3px ;
-    margin-left: 1px; 
     border: 2px solid rgb(142, 172, 98);
     box-shadow: -1px 1px 5px 4px rgb(120, 136, 97);
 }
 .con-details h3{
     text-align: center;
     font-size: 30px;
-
-
 }
 .main-content {
     flex-grow: 1; /* Grow to fill available space */
