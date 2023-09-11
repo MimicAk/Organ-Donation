@@ -33,7 +33,7 @@
     .details1{
         align-items: center;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 30px;
         margin-bottom: 50px;
     }
     .details1 h2{
@@ -43,9 +43,6 @@
         border-radius: 5px;
         padding: 10px;
         color: whitesmoke;
-
-
-
     }
     .frm{
         width: 80%;
@@ -72,6 +69,10 @@
         border: 2px solid seagreen;
         margin-bottom: 8px;
     }
+    .inp:focus{
+        outline: 2px solid rgb(39, 158, 91);
+
+    }
     .inp1{
         margin-left: 190px;
         margin-bottom: 8px;
@@ -82,6 +83,7 @@
     }
     /*second form*/
     .details2 {
+        align-items: center;
         text-align: center;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -93,13 +95,6 @@
         border-radius: 5px;
         padding: 10px;
         color: whitesmoke;
-    }
-    .frm2{
-        width: 80%;
-        margin-left: 110px;
-        border-radius: 15px;
-        border: 2px solid rgb(142, 172, 98);
-        box-shadow: -3px 3px 10px 4px rgb(120, 136, 97);
     }
     .tbls2{
         margin-top: 50px;
@@ -120,6 +115,10 @@
         border: 2px solid seagreen;
         margin-bottom: 8px;
     }
+    .inp2:focus{
+        outline: 2px solid rgb(39, 158, 91);
+
+    }
     .radio1{
         margin-left: 110px;
     }
@@ -137,13 +136,7 @@
         padding: 10px;
         color: whitesmoke;
     }
-    .frm3{
-        width: 80%;
-        margin-left: 110px;
-        border-radius: 15px;
-        border: 2px solid rgb(142, 172, 98);
-        box-shadow: -3px 3px 10px 4px rgb(120, 136, 97);
-    }
+
     .tbls3{
         margin-top: 50px;
         margin-left: 50px;
@@ -164,6 +157,9 @@
         border: 2px solid seagreen;
         margin-bottom: 8px;
     }
+    .inp3:focus{
+        outline: 2px solid rgb(39, 158, 91);
+    }
     .btn{
         padding: 0px 35px;
         height: 50px;
@@ -179,125 +175,17 @@
         color: whitesmoke;
         cursor: pointer;
     }
-    @media only screen and (max-width:412px){
-        .heds h1{
-            margin-top: -10px;
-            padding-top: 15px;
-            height: 70px;
-            font-size: 30px;
-            width: 300px;
-            margin-left: 45px;
-        }
-        .frm{
-            width: 390px;
-            box-shadow: -1px 1px 3px ;
-            margin-left: 1px; 
-            border: 2px solid rgb(142, 172, 98);
-            box-shadow: -1px 1px 5px 4px rgb(120, 136, 97);
-        }
-        .names{
-            margin-top: -30px;
-            display: block;
-            font-size: 18px;
-            text-align: center;
-            width: 200px;
-            margin-left: 60px;
-            
-        }
-        .inp1{
-            margin-left: -265px;
-            padding: 10px 10px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            height: 40px;
-            width: 325px;
-            border-radius: 5px;
-
-        }
-        .inp{
-            margin-left: -265px;
-            padding: 10px 10px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            height: 15px;
-            width: 300px;
-            border-radius: 5px;
-        }
-        /* from 2*/
-        .frm2{
-            width: 390px;
-            box-shadow: -1px 1px 3px ;
-            margin-left: 1px; 
-            border: 2px solid rgb(142, 172, 98);
-            box-shadow: -1px 1px 5px 4px rgb(120, 136, 97);
-        }
-        .names1{
-            margin-top: -30px;
-            display: block;
-            margin-bottom: 80px;
-            font-size: 18px;
-            text-align: center;
-            width: 250px;
-            margin-left: 50px; 
-        }
-        .inp2{
-            margin-left: -295px;
-            padding: 10px 10px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            height: 15px;
-            width: 300px;
-            border-radius: 5px;
-        }
-        .radio1{
-            display: inline-block;
-            margin-top: 50px;
-            margin-bottom: 30px;
-            margin-left: -115px;
-            
-        }
-        /*form 3*/
-        .frm3{
-            width: 390px;
-            box-shadow: -1px 1px 3px ;
-            margin-left: 1px; 
-            border: 2px solid rgb(142, 172, 98);
-            box-shadow: -1px 1px 5px 4px rgb(120, 136, 97);
-        }
-        .names2{
-            margin-top: -30px;
-            display: block;
-            margin-bottom: 80px;
-            font-size: 18px;
-            text-align: center;
-            width: 250px;
-            margin-left: 20px; 
-        }
-        .inp3{
-            margin-left: -295px;
-            padding: 10px 10px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            height: 15px;
-            width: 300px;
-            border-radius: 5px;
-        }
-        .btn{
-            margin-left: 130px;
-        }
-    }
-
     </style>
 </head>
 <body>
     <div class="heds">
         <h1>Register Hospital</h1>
     </div>
-    <div class="details1">
-        <h2>Add Hospital Details</h2>
-    </div>
     <div class="inputs">
         <form class="frm">
+            <div class="details1">
+                <h2>Add Hospital Details</h2>
+            </div>
             <table class="tbls">
                 <tr>
                     <td class="names">UserName</td><td><input class="inp" type="text" id="user" ></td>
@@ -374,13 +262,9 @@
                     <td class="names">Hospital Website Address </td><td> <input class="inp" type="text" id="Website"></td>
                 </tr>
             </table>
-        </form>
-    </div>
-    <div class="details2">
-        <h2>License Details</h2>
-    </div>
-    <div class="inputs1">
-        <form class="frm2">
+            <div class="details2">
+                <h2>License Details</h2>
+            </div>
             <table class="tbls2">
                 <tr>
                     <td class="names1">Is Your Transplant Registration License Active?</td><td>
@@ -392,7 +276,7 @@
                     <td class="names1">License Expiry Date</td><td><input class="inp2"  type="text"></td>
                 </tr>
                 <tr>
-                    <td class="names1">Certificate Number</td><td><input class="inp2"  type="text"></td>
+                    <td class="names1">Cetificate Number</td><td><input class="inp2"  type="text"></td>
                 </tr>
                 <tr>
                     <td class="names1">Name of the Transplant Coordinator</td><td><input class="inp2"  type="text"></td>
@@ -404,13 +288,9 @@
                     <td class="names1">Tx Email ID </td><td><input class="inp2"  type="text"></td>
                 </tr>
             </table>
-        </form>
-    </div>
-    <div class="details3">
-        <h2>Consultants Details</h2>
-    </div>
-    <div class="inputs2">
-        <form class="frm3">
+            <div class="details3">
+                <h2>Consultants Details</h2>
+            </div>
             <table class="tbls3">
                 <tr>
                     <td class="names2">Consultant</td><td><input class="inp3" type="text"></td>
