@@ -103,7 +103,7 @@ body {
     background-color: #f0f0f0;
 }
 h1 {
-    color: #333;
+    color: black;
     text-align: center;
 }
 h2 {
@@ -116,7 +116,7 @@ p {
 ul {
     list-style-type: disc;
     margin-left: 20px;
-    color: #777;
+    color:black;
 }
 
 
