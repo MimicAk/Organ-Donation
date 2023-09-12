@@ -37,14 +37,17 @@
     box-shadow: 0px 0px 3px 1px seagreen;
 }
 .head-2{
-    display: flex;
     width: 80%;
-    justify-content: space-evenly;
-    align-items: center;
     margin: 0px auto;
     padding: 20px;
     border-radius: 20px;
     border: 2px solid black;
+}
+.head-2>form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 .file-1-1,.file-1-2,.file-3-1{
     display: none;
@@ -58,7 +61,7 @@
     font-weight: 600;
     color: white;
 }
-.head-2>div:nth-child(1){
+.head-2>form>div:nth-child(1){
     position: relative;
     height: fit-content;
     width: fit-content;
@@ -68,7 +71,7 @@
     left: 10px;
     top: 0px;
 }
-.head-2>div:nth-child(2){
+.head-2>form>div:nth-child(2){
     position: relative;
     height: fit-content;
     width: fit-content;
@@ -88,7 +91,7 @@
     color: white;
     outline: 1px solid white;
 }
-.head-2>div:nth-child(4){
+.head-2>form>div:nth-child(5){
     position: relative;
     height: fit-content;
     width: fit-content;
@@ -107,6 +110,19 @@
     position: absolute;
     left: 10px;
     top: 10px;
+}
+.btn-1,.btn-2{
+    cursor: pointer;
+    border: 1px solid red;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(240, 28, 28);
+}
+.btn-1:hover{
+    background-color: rgb(177, 25, 25);
 }
 .head-3{
     width: 80%;
@@ -179,100 +195,79 @@
     color: rgb(9, 48, 9);
 }
 .d-2{
-    display: flex;
-    padding: 10px 20px 10px 10px;
-    gap: 10px;
-    flex-grow: 1;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
     position: relative;
-    flex-direction: column;
-    width: fit-content;
+    height: max-content;
+    width: 240px;
+    border: 0.5px solid seagreen;
+    position: relative;
+    top: 0px;
+    left: 218px;
+    margin: 0;
+    border-radius: 8px; 
 }
-.rad-1::after{
-    content: "Perfect";
-    color: rgb(16, 119, 16);
-    position: absolute;
-    right: 120px;
-    top: 10px;
-    font-size: 15px;
-    font-weight: 700;
-}
-.rad-2::after{
-    content: "Good";
-    color: rgb(93, 241, 93);
-    position: absolute;
-    right: 133px;
-    top: 36px;
-    font-size: 15px;
-    font-weight: 700;
-}
-.rad-3::after{
-    content: "Medium";
-    color: rgb(236, 233, 9);
-    position: absolute;
-    right: 113px;
-    top: 62px;
-    font-size: 15px;
-    font-weight: 700;
-}
-.rad-4::after{
-    content: "Poor";
-    color: rgb(241, 116, 13);
-    position: absolute;
-    right: 138px;
-    top: 88px;
-    font-size: 15px;
-    font-weight: 700;
-}
-.rad-5::after{
-    content: "Danger";
-    color: red;
-    position: absolute;
-    right: 120px;
-    top: 114px;
-    font-size: 15px;
-    font-weight: 700;
+.d-2>h4{
+    padding: 5px;
+    margin: 0;
 }
 .head-3-3{
+    padding: 10px 0px 10px 0;
     border: 0.5px solid black;
     width: 95%;
     border-radius: 8px;
-    padding: 10px 10px 10px 10px;
-    height: fit-content;
-    align-items: center;
+    padding: 20px 10px 20px 10px;
+    height: max-content;
+}
+.head-3-3>form>div:nth-child(1){
     display: flex;
-    justify-content: space-between;
-
+    padding: 20px 0px 20px 0px;
+    height: max-content;
+    margin-bottom: 50px;
 }
 .d-3{ 
+    display: inline-block;
     cursor: pointer;
     text-align: center;
-    padding: 20px;
-    flex-grow: 1;
-    height: 50px;
-    width: 50px;
-    padding: 10px 10px 10px 10px;
+    height:fit-content;
+    width: fit-content;
+    position: relative;
+    top: 0px;
+    left: 370px;
+    margin: 0;
+    margin-top: 10px;
 }
 .d-1{
+    position: relative;
+    top: 0px;
+    left: 100px;
+    height:100%;
+    margin: 0;
+    width: fit-content;
+    display: inline-block;
     text-align: center;
-    flex-grow: 0.5;
-    padding: 10px 10px 10px 25px;
     font-size: 17px;
     font-weight: 700;
     color: rgb(9, 48, 9);
+    margin-top: 10px;
 }
 .bi-telephone-fill{
     padding: 20px;
     border-radius: 50%;
     background-color: rgb(76, 202, 76);
+    border: 2px solid black;
 }
 .submit{
-    width: 95%;
-    padding: 0;
+    padding: 10px;
     margin-top: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
 }
 .submit-1{
+    position: relative;
+    top: 0;
+    left: 388px;
     padding: 10px;
     background-color: rgb(240, 7, 7);
     color: white;
