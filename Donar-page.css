@@ -1,0 +1,287 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    margin: 10px auto;
+    border-radius: 14px;
+    padding: 0;
+    height: fit-content;
+    border: 0.5px solid seagreen;
+    width: 98%;
+    box-shadow: 0px 0px 8px 2px black ;
+}
+.head-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid black; 
+    border-radius: 20px;
+    /* background-color: rgb(7, 7, 7); */
+}
+.head-1>h1{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 900;
+    background-image: linear-gradient(to right,rgb(28, 88, 54),rgb(54, 143, 92),rgb(64, 184, 116));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.person-fill-check{
+    border: 2px solid seagreen;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 1px seagreen;
+}
+.head-2{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.file-1-1,.file-1-2,.file-3-1{
+    display: none;
+}
+.label-1,.label-2,.label-3{
+    cursor: pointer;
+    padding: 10px 15px 10px 40px;
+    background-color: rgb(36, 112, 69);
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+.head-2>div:nth-child(1){
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+.bi-image{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+.head-2>div:nth-child(2){
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+.bi-person-vcard-fill{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+.status{
+    cursor: pointer;
+    padding: 8px 30px 8px 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(36, 112, 69);
+    color: white;
+    outline: 1px solid white;
+}
+.head-2>div:nth-child(4){
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+.download-dc{
+    cursor: pointer;
+    padding: 8px 15px 8px 35px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color:  rgb(36, 112, 69);
+    border: 0.5px solid seagreen;
+}
+.bi-download{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.head-3{
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.head-3>.head-3-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 95%;
+    border-radius: 8px;
+    height: fit-content;
+    border: 0.5px solid black;
+}
+.bi-upload{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+.head-3-1>div:nth-child(1){
+    color: rgb(12, 49, 28);
+    font-size: 15px;
+    font-weight: 600;
+}
+.head-3-1>div:nth-child(2){
+    position: relative;
+}
+.head-3>.head-3-2{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0px 10px 0px 10px;
+    width: 95%;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: fit-content;
+    border: 0.5px solid black;
+    background-color: mediumseagreen;
+}
+.head-3>.head-3-2>div:nth-child(1){
+    padding: 10px 20px 10px 20px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 18px;
+    height: 100%;
+    font-weight: 700;
+    color: rgb(9, 48, 9);
+    border-right: 1px solid rgb(22, 77, 46);
+}
+.head-3>.head-3-2>div:nth-child(2){
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(9, 48, 9);
+    border-right: 1px solid rgb(22, 77, 46);
+}
+.head-3>.head-3-2>div:nth-child(3){
+    text-align: center;
+    flex-grow: 1.2;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(9, 48, 9);
+}
+.d-2{
+    display: flex;
+    padding: 10px 20px 10px 10px;
+    gap: 10px;
+    flex-grow: 1;
+    position: relative;
+    flex-direction: column;
+    width: fit-content;
+}
+.rad-1::after{
+    content: "Perfect";
+    color: rgb(16, 119, 16);
+    position: absolute;
+    right: 120px;
+    top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.rad-2::after{
+    content: "Good";
+    color: rgb(93, 241, 93);
+    position: absolute;
+    right: 133px;
+    top: 36px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.rad-3::after{
+    content: "Medium";
+    color: rgb(236, 233, 9);
+    position: absolute;
+    right: 113px;
+    top: 62px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.rad-4::after{
+    content: "Poor";
+    color: rgb(241, 116, 13);
+    position: absolute;
+    right: 138px;
+    top: 88px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.rad-5::after{
+    content: "Danger";
+    color: red;
+    position: absolute;
+    right: 120px;
+    top: 114px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.head-3-3{
+    border: 0.5px solid black;
+    width: 95%;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.d-3{ 
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+    height: 50px;
+    width: 50px;
+    padding: 10px 10px 10px 10px;
+}
+.d-1{
+    text-align: center;
+    flex-grow: 0.5;
+    padding: 10px 10px 10px 25px;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(9, 48, 9);
+}
+.bi-telephone-fill{
+    padding: 20px;
+    border-radius: 50%;
+    background-color: rgb(76, 202, 76);
+}
+.submit{
+    width: 95%;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.submit-1{
+    padding: 10px;
+    background-color: rgb(240, 7, 7);
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 1px solid rgb(247, 5, 5);
+    box-shadow: 0px 0px 6px 2px black;
+}
+.submit-1:hover{
+    background-color:  rgb(240, 28, 28);
+}
