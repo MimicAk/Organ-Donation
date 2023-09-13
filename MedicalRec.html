@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Record</title>
+
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .table-content{
+            border-radius: 8px ;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(39, 38, 38, 0.6);
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            min-width: 700px;
+            margin-left: 200px;
+            margin-top: 70px;
+        }
+        .table-content thead tr{
+            background:linear-gradient(to right,rgb(202, 175, 228),rgb(233, 157, 233),rgb(180, 227, 209)) ;
+            color: rgb(29, 33, 31);
+            text-align: left;
+            font-weight: bold;
+        }
+        .table-content th,
+        .table-content td{
+            padding: 10px 10px;
+        }
+        .table-content tbody tr{
+            border: 1px solid #bcb9b9;
+        }
+        .table-content tbody tr:nth-of-type(even){
+            background-color: #dedbdb;
+        }
+      
+        /*buttons*/
+
+        td button{
+            width: 60px;
+            padding: 5px ;
+            margin-left: 50px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 1px solid rgb(77, 76, 76);
+            transition: all ease-out .3s;
+        }
+        td button:hover{
+            color: whitesmoke;
+            background-color: rgb(151, 213, 7);
+        }
+        td .inp1{
+            border-radius: 5px;
+            height: 30px;
+            border: 2px solid rgb(117, 178, 132);
+            cursor: pointer;
+            border-radius: 10px;   
+        }
+        td .inp1:focus{
+            outline-color: rgb(103, 218, 147);
+        }
+        td .inp2{
+            border-radius: 5px;
+            height: 30px;
+            cursor: pointer;  
+            padding: 5px 8px;
+            border-radius: 50px; 
+            border: 1px solid rgb(77, 76, 76);
+            transition: all ease-in 0.3s;
+        }
+        td .inp2:hover{
+            background-color: rgb(219, 142, 212);
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <table class="table-content">
+        <thead>
+            <tr>
+                <th>Id.</th>
+                <th>Donor Medical Records</th>
+                <th>Make Remarks</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>filename<button>View</button></td>
+                    <td><input class="inp1" type="text"></td>
+                    <td><input class="inp2" type="submit"></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>filename<button>View</button></td>
+                    <td><input class="inp1" type="text"></td>
+                    <td><input class="inp2" type="submit"></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>filename<button>View</button></td>
+                    <td><input class="inp1"type="text"></td>
+                    <td><input class="inp2"type="submit"></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>filename<button>View</button></td>
+                    <td><input class="inp1"type="text"></td>
+                    <td><input class="inp2"type="submit"></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>filename<button>View</button></td>
+                    <td><input class="inp1"type="text"></td>
+                    <td><input class="inp2"type="submit"></td>
+                </tr>
+            </tbody>
+     </table>
+</body>
+</html>
