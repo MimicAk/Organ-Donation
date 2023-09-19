@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+  }
 body{
     border: 0;
     outline: 0;
@@ -7,7 +10,7 @@ body{
     margin-top: 10px;
     margin-bottom: 80px;
 }
-.contact-head h2{
+.contact-head h1{
     border: 2px solid  rgb(142, 172, 98);
     background-color: rgb(67, 136, 58);
     text-shadow: -2px 1px 3px rgb(142, 172, 98);
@@ -23,8 +26,11 @@ body{
     align-items: center;
     box-shadow: -1px 1px 3px ;
     border: 2px solid rgb(142, 172, 98);
-    box-shadow: -1px 1px 5px 4px rgb(120, 136, 97);
+    box-shadow: -1px 
+    1px 5px 4px rgb(120, 136, 97);
 }
+
+
 .con-details h3{
     text-align: center;
     font-size: 30px;
@@ -33,3 +39,18 @@ body{
     flex-grow: 1; /* Grow to fill available space */
     padding: 100px; /* Adjust padding as needed */
 }
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+

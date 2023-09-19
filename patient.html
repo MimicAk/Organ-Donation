@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient</title>
+    <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+    <div class="feed-head">
+        <h2>Patient Register</h2>
+    </div>
+    
+    <div class="inputs">
+    <div class="feed-details">
+        <p>Register New Patient</p>
+        <table class="tbls">
+            <tr>
+                <td class="names">Full Name</td><td><input class="inp" type="text" id="user" ></td>
+            </tr>
+            <div class="gender">
+                <tr>
+                 <td class="names">Gender</td><td>
+                     <input class="input_item" type="radio" id="male" name="gender" value="male">
+                    <label class="gen" for="male">Male</label><br>
+        
+                    <input class="input_item" type="radio" id="female" name="gender" value="female">
+                    <label class="gen"  for="female">Female</label><br>
+        
+                    <input class="input_item" type="radio" id="other" name="gender" value="other">
+                    <label class="gen" for="other">Other</label><br>
+               
+            
+                 </td>
+                </tr>
+            </div>
+            <tr>
+                <td class="names">E-Mail ID </td><td> <input class="inp" type="email" id="id"></td>
+            </tr>
+            <tr>
+                <td class="names"> Phone Number</td><td> <input class="inp" type="text" id="Hospital"></td>
+            </tr>    
+       
+            <div class="organ">
+                <tr>
+                 <td class="names">Organ Needed</td><td>
+                          
+                        <input class="input_item" type="checkbox" id="checkbox1">
+                        <label  class="check"  for="checkbox1">Corneas(Eyes)</label><br>
+                        <input class="input_item" type="checkbox" id="checkbox2">
+                        <label  class="check"  for="checkbox2">Lungs</label><br>
+                        <input class="input_item" type="checkbox" id="checkbox3">
+                        <label  class="check"  for="checkbox3">Liver</label><br>
+                        <input class="input_item" type="checkbox" id="checkbox4">
+                        <label  class="check"  for="checkbox4">Kidneys</label><br>
+                        <input class="input_item" type="checkbox" id="checkbox5">
+                        <label  class="check"  for="checkbox5">Heart</label><br>
+                    <br>
+            
+                    </td>
+                 </tr>
+            </div>
+            <tr>
+                <td class="names"> Address</td>
+                <td> <input class="big_box" type="text" id="Hospital" rows="5" cols="30"></td>
+            </tr>
+            <tr>
+                <td class="names">Remarks </td><td> <input class="big_box" type="text" id="text" rows="5" cols="30"></td>
+            </tr>
+
+
+            <tr>
+                <td class="names">Blood Type</td><td>
+                        <select id="blood-group" class="styled-dropdown" name="blood-group">
+                          <option value="Select">-Select-</option>
+                          <option value="A+">A+</option>
+                         <option value="A-">A-</option>
+                          <option value="B+">B+</option>
+                          <option value="B-">B-</option>
+                          <option value="AB+">AB+</option>
+                          <option value="AB-">AB-</option>
+                          <option value="O+">O+</option>
+                          <option value="O-">O-</option>
+                        </select>
+            
+                </td>
+            </tr>
+
+            <tr>
+                <td class="names">Status</td><td>
+                        <select id="status" class="styled-dropdown" name="status">
+                          <option value="Select">-Select-</option>
+                          <option value="Active">A+</option>
+                         <option value="Deactive">Deactive</option>
+                        </select>
+            
+                </td>
+            </tr>
+
+        
+
+
+        </table>
+
+
+
+
+
+
+
+
+        <div>
+            <td><button class="btn">Register</td>
+        </div>
+    </div>
+    </div>
+    
+     
+    
+</body>
+</html>

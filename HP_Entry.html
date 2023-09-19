@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP_Entry</title>
+
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        form{
+            border: 2px solid rgb(251, 77, 61);
+            box-shadow: 0 0 3px 3px rgb(183, 93, 83);
+            width: 370px;
+            border-radius: 15px;
+            margin-left: 350px;
+            margin-top: 0px;
+        }
+        .f_content{
+            margin-top: 20px;
+            margin-left: 45px;
+        }
+        .content{
+            margin-bottom: 20px;
+        }
+        .content label{
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            color:rgb(21, 18, 18);
+        }
+        .content input{
+            display: block;
+            margin-top: 10px;
+            padding: 10px 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: 2px solid rgb(3, 184, 3);
+        }
+        .content input:focus{
+            outline: 2px solid rgb(2, 231, 2);
+        }
+        .Rem_cont label{
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            color:rgb(21, 18, 18);
+        }
+        .Rem_cont textarea{
+            display: block;
+            margin-top: 10px;
+            resize: none;
+            border-radius: 10px;
+            background-color: #cfcece;
+            color: #666666;
+            padding: 1em;
+            border: 2px solid transparent;
+            outline: none;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 245px;
+            height: 100px;
+            transition: all 0.2s;
+        }
+        .Rem_cont textarea:hover{
+            cursor: pointer;
+            background-color: rgb(200, 199, 199);
+        }
+        .Rem_cont textarea:focus{
+            cursor: text;
+            color: #333333;
+            background-color: white;
+            border: 2px solid #333333;
+        }
+        
+        .cont_btn button{
+            font-size: 15px;
+            padding: 8px 10px;
+            width: 100px;
+            margin-left: 80px;
+            color: rgb(46, 45, 45);
+            margin-top: 20px;
+            margin-bottom: 25px;
+            border-radius: 50px;
+            border: 2px solid rgb(217, 208, 38);
+            background-color: rgb(217, 255, 4);
+            box-shadow: -1px 2px 3px  rgb(77, 83, 22);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="not">
+        
+    </div>
+    <form>
+        <div class="f_content">
+            <div class="content">
+                <label for="id">User ID</label>
+                <input id="id" name="id" type="text" placeholder="Enter User Id">
+            </div>
+            <div class="content">
+                <label for="to">To Whom</label>
+                <input id="to" name="to" type="text" placeholder="Enter Patient Id">
+            </div>
+            <div class="content">
+                <label for="hos">Which Hospital</label>
+                <input id="hos" name="hospital" type="text" placeholder="Enter Hospita Name">
+            </div>
+            <div class="content">
+                <label for="dr_name">Doctor Name</label>
+                <input id="dr_name" name="name" type="text" placeholder="Enter Doctor Name">
+            </div>
+            <div class="Rem_cont"> 
+                <label for="rem">Remarks</label>
+                <textarea id="rem" name="remarks" placeholder="Type Here..."></textarea>
+            </div>
+            <div class="cont_btn">
+                <button>Update</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
