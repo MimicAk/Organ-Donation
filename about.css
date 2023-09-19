@@ -9,12 +9,8 @@ body{
     margin-bottom: 50px;
 }
 .about-head h1{
-    border: 2px solid  rgb(142, 172, 98);
-    background-color: rgb(67, 136, 58);
-    text-shadow: -2px 1px 3px rgb(142, 172, 98);
-    border-radius: 5px;
     padding: 10px;
-    color: whitesmoke;
+    color: black;
 }
 
 .about-details{
