@@ -7,7 +7,7 @@ body{
     margin-top: 10px;
     margin-bottom: 80px;
 }
-.contact-head h2{
+.contact-head h1{
     border: 2px solid  rgb(142, 172, 98);
     background-color: rgb(67, 136, 58);
     text-shadow: -2px 1px 3px rgb(142, 172, 98);
@@ -23,8 +23,11 @@ body{
     align-items: center;
     box-shadow: -1px 1px 3px ;
     border: 2px solid rgb(142, 172, 98);
-    box-shadow: -1px 1px 5px 4px rgb(120, 136, 97);
+    box-shadow: -1px 
+    1px 5px 4px rgb(120, 136, 97);
 }
+
+
 .con-details h3{
     text-align: center;
     font-size: 30px;
@@ -32,4 +35,30 @@ body{
 .main-content {
     flex-grow: 1; /* Grow to fill available space */
     padding: 100px; /* Adjust padding as needed */
+}
+.socialmedia {
+    text-align: center;
+    padding: var(--gutter-medium) 0 var(--gutter-normal);
+}
+
+.footer__social-links {
+    display: flex;
+    justify-content: center;
+    padding: var(--gutter-normal) 0;
+    list-style: none;
+}
+
+.footer__social-link-item:not(:last-of-type) {
+    margin-right: var(--gutter-small);
+}
+
+.footer__social-image {
+    height: 4rem;
+}
+
+
+@media(max-width: 500px) {
+    .socialmedia {
+        padding: var(--gutter-medium) 0;
+    } 
 }
