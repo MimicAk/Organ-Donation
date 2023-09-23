@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Register</title>
+
+    <style>
+        body{
+        border: 0;
+        outline: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .heds {
+        margin-top: 50px;
+        
+    }
+    .heds h1{
+        width: 45%;
+        height: 80px;
+        text-align: center;
+        margin-bottom: 60px;
+        margin-left: 28%;
+        border: 3px solid rgb(128, 126, 126);
+        box-shadow: -2px 2px 10px 2px ;
+        border-radius: 5px;
+        margin-top: 8px;
+        color: rgb(67, 136, 58);
+        font-weight: 900;
+        font-size: 50px;
+    }
+    .details1{
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .details1 h2{
+        border: 2px solid  rgb(142, 172, 98);
+        background-color: rgb(67, 136, 58);
+        text-shadow: -2px 1px 3px rgb(142, 172, 98);
+        border-radius: 5px;
+        padding: 10px;
+        color: whitesmoke;
+    }
+    .frm{
+        width: 80%;
+        margin-left: 110px;
+        border-radius: 15px;
+        border: 2px solid rgb(142, 172, 98);
+        box-shadow: -3px 3px 10px 4px rgb(120, 136, 97);
+    }
+    .tbls{
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+    .names{
+        font-size: 20px;
+        color: rgb(80, 56, 56);
+    }
+    .inp{
+        margin-left: 190px;
+        padding: 15px 10px;
+        height: 15px;
+        width: 300px;
+        border-radius: 5px;
+        border: 2px solid seagreen;
+        margin-bottom: 8px;
+    }
+    .inp:focus{
+        outline: 2px solid rgb(39, 158, 91);
+
+    }
+    .inp1{
+        margin-left: 190px;
+        margin-bottom: 8px;
+        border-radius: 5px;
+        width: 323px;
+        border: 2px solid rgb(234, 137, 25);
+        padding: 10px;
+    }
+    /*second form*/
+    .details2 {
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .details2 h2{
+        border: 2px solid  rgb(142, 172, 98);
+        background-color: rgb(67, 136, 58);
+        text-shadow: -2px 1px 3px rgb(142, 172, 98);
+        border-radius: 5px;
+        padding: 10px;
+        color: whitesmoke;
+    }
+    .tbls2{
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    .names1{
+        font-size: 20px;
+        color: rgb(80, 56, 56);
+    }
+    .inp2{
+        margin-left: 30px;
+        padding: 15px 10px;
+        height: 15px;
+        width: 300px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 2px solid seagreen;
+        margin-bottom: 8px;
+    }
+    .inp2:focus{
+        outline: 2px solid rgb(39, 158, 91);
+
+    }
+    .radio1{
+        margin-left: 110px;
+    }
+    /* form 3*/
+    .details3 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .details3 h2{
+        border: 2px solid  rgb(142, 172, 98);
+        background-color: rgb(67, 136, 58);
+        text-shadow: -2px 1px 3px rgb(142, 172, 98);
+        border-radius: 5px;
+        padding: 10px;
+        color: whitesmoke;
+    }
+
+    .tbls3{
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 80px;
+        
+    }
+    .names2{
+        font-size: 20px;
+        color: rgb(80, 56, 56);
+    }
+    .inp3{
+        margin-left: 300px;
+        padding: 15px 10px;
+        height: 15px;
+        width: 300px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 2px solid seagreen;
+        margin-bottom: 8px;
+    }
+    .inp3:focus{
+        outline: 2px solid rgb(39, 158, 91);
+    }
+    .btn{
+        padding: 0px 35px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 470px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+        border: 1px solid  rgb(67, 136, 58);
+        background-color:rgb(67, 136, 58);
+        box-shadow: 0px 0px 10px 2px gray;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(93, 204, 79);
+    }
+    </style>
+</head>
+<body>
+    <div class="heds">
+        <h1>Register Hospital</h1>
+    </div>
+    <div class="inputs">
+        <form class="frm">
+            <div class="details1">
+                <h2>Add Hospital Details</h2>
+            </div>
+            <table class="tbls">
+                <tr>
+                    <td class="names">Name of the Hospital director</td><td> <input class="inp" name="hospital_director" type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names">Director Mobile.No </td><td> <input class="inp" name="director_mobile" type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names">Director E-Mail ID</td><td> <input class="inp" name="director_email" type="email"></td>
+                </tr>
+            </table>
+            <div class="details2">
+                <h2>License Details</h2>
+            </div>
+            <table class="tbls2">
+                <tr>
+                    <td class="names1">Is Your Transplant Registration License Active?</td><td>
+                        <input class="radio1" type="radio" value="1" name="active_license">Yes 
+                        <input class="radio1" type="radio" value="0" name="active_license">No
+                    </td>
+                </tr>
+                <tr>
+                    <td class="names1">License Expiry Date</td><td><input class="inp2" name="license_exp_date"  type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names1">Certificate Number</td><td><input class="inp2" name="certificate_number" type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names1">Name of the Transplant Coordinator</td><td><input class="inp2" name="trp_coordinator_name"  type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names1">Tx Mobile No (Numbers Should Be Accessible 24/7)</td><td><input class="inp2" name="trp_coordinator_mobile"  type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names1">Tx Email ID </td><td><input class="inp2" name="trp_coordinator_email"  type="text"></td>
+                </tr>
+            </table>
+            <div class="details3">
+                <h2>Consultants Details</h2>
+            </div>
+            <table class="tbls3">
+                <tr>
+                    <td class="names2">Consultant 1 Name</td><td><input class="inp3" name="consultant1_name" type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names2">Mobile.No</td><td> <input class="inp3" name="consultant1_mobile" type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names2">Consultant 2 Name</td><td><input class="inp3" name="consultant2_name" type="text"></td>
+                </tr>
+                <tr>
+                    <td class="names2">Mobile.No</td><td> <input class="inp3" name="consultant2_mobile" type="text"></td>
+                </tr>
+            </table>
+            <div>
+                <td><button type="submit" class="btn">Update</td>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
