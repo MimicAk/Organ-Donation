@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HP_Entry</title>
+    <title>Surgical Data Entry</title>
 
     <style>
         body{
@@ -72,7 +72,7 @@
             background-color: white;
             border: 2px solid #333333;
         }
-        
+
         .cont_btn button{
             font-size: 15px;
             padding: 8px 10px;
@@ -91,13 +91,14 @@
 </head>
 <body>
     <div class="not">
-        
+
     </div>
     <form>
         <div class="f_content">
+            <h2>Donation Details Entry Form</h2>
             <div class="content">
                 <label for="id">User ID</label>
-                <input id="id" name="id" type="text" placeholder="Enter User Id">
+                <input id="id" name="id" type="text" placeholder="Enter Donor Id">
             </div>
             <div class="content">
                 <label for="to">To Whom</label>
@@ -107,11 +108,17 @@
                 <label for="hos">Which Hospital</label>
                 <input id="hos" name="hospital" type="text" placeholder="Enter Hospita Name">
             </div>
+
+            <div class="content">
+                <label for="dr_name">Date Of Donation/Surgery</label>
+                <input id="date" name="date" type="date" placeholder="Date of Surgery/Donation">
+            </div>
+
             <div class="content">
                 <label for="dr_name">Doctor Name</label>
                 <input id="dr_name" name="name" type="text" placeholder="Enter Doctor Name">
             </div>
-            <div class="Rem_cont"> 
+            <div class="Rem_cont">
                 <label for="rem">Remarks</label>
                 <textarea id="rem" name="remarks" placeholder="Type Here..."></textarea>
             </div>

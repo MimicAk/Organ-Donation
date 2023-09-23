@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            position: relative;
+            margin: 20px auto;
+            border-radius: 14px;
+            padding: 0;
+            padding-top: 20px;
+            height: fit-content;
+            border: 0.5px solid seagreen;
+            width: 98%;
+            box-shadow: 0px 0px 8px 2px black ;
+        }
+
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            color: coral;
+            border: 2px solid black; 
+            border-radius: 20px;
+            /* background-color: rgb(7, 7, 7); */
+        }
+        .header>h1{
+            display: inline-block;
+            font-size: 40px;
+            font-weight: 900;
+            background-image: linear-gradient(to right,rgb(28, 88, 54),rgb(54, 143, 92),rgb(64, 184, 116));
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+        .search_result{
+            width: 80%;
+            margin: 0px auto;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid black;
+        }
+
+        .result{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            color: coral;
+            border: 2px solid black; 
+            border-radius: 20px;
+            /* background-color: rgb(7, 7, 7); */
+        }
+
+        .result li {
+            list-style: none !important;
+        }
+
+        .result li a {
+            font-size: 50px;
+            text-decoration: none;
+            color: aquamarine;
+            font-style: bold;
+        }
+        .result li p {
+            justify-content: center;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Predicted Disease: <span>Data</span></h1>
+        </div>
+        <div class="search_result">
+            <h3>Search Results On the Web For the Disease</h3>
+            <ul class="result">
+                    <li>
+                        <a href="#">{{ result.title }}</a>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam laborum consectetur. Molestiae, voluptatibus ullam? Recusandae praesentium quam asperiores perspiciatis dolor? Quam, at repellendus nostrum repudiandae amet harum consequatur optio.</p>
+                    </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
