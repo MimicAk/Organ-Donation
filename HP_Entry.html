@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surgical Data Entry</title>
+    <title>HP_Entry</title>
 
     <style>
         body{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-        form{
+        .frm1{
             border: 2px solid rgb(251, 77, 61);
             box-shadow: 0 0 3px 3px rgb(183, 93, 83);
             width: 370px;
             border-radius: 15px;
-            margin-left: 350px;
-            margin-top: 0px;
+            margin-left: 30px;
+            margin-top: 20px;
         }
         .f_content{
             margin-top: 20px;
@@ -23,6 +23,26 @@
         }
         .content{
             margin-bottom: 20px;
+        }
+        .content1 select{
+            display: block;
+        }
+        .content1 label{
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            color:rgb(21, 18, 18);
+        }
+        .content1 select{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px 10px;
+            width: 270px;
+            border-radius: 5px;
+            border: 2px solid chocolate;
+        }
+        .content1 select:focus{
+            outline-color: orangered;
         }
         .content label{
             font-size: 20px;
@@ -72,7 +92,6 @@
             background-color: white;
             border: 2px solid #333333;
         }
-
         .cont_btn button{
             font-size: 15px;
             padding: 8px 10px;
@@ -87,38 +106,95 @@
             box-shadow: -1px 2px 3px  rgb(77, 83, 22);
             cursor: pointer;
         }
+        .container{
+            border: 2px solid firebrick;
+            border-radius: 10px;
+        }
+        .hed1{
+            border: 2px solid green;
+            width: 300px;
+            border-radius: 5px;
+        }
+        .inp1{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .spn1{
+            margin-left: 100px;
+        }
+        /* 2nd table */
+        
+        .frm2{
+            border: 2px solid rgb(251, 77, 61);
+            box-shadow: 0 0 3px 3px rgb(183, 93, 83);
+            width: 370px;
+            height: 220px;
+            border-radius: 15px;
+            position: relative;
+            top: -630px;
+            left: 500px;
+        }
+        .hed h2{
+            border: 2px solid chartreuse;
+            border-radius: 50px;
+            width: 320px;
+            display: flex;
+            margin-left: 20px;
+            justify-content: center;
+        }
+        .tds{
+            position: relative;
+            left: 20px;
+            font-size: 20px;  
+        }
+        span{
+            position: relative;
+            left: 150px;
+            font-size: 20px;
+        }
+        /* 3rd form */
+        .frm3{
+            border: 2px solid rgb(251, 77, 61);
+            box-shadow: 0 0 3px 3px rgb(183, 93, 83);
+            width: 370px;
+            height: 220px;
+            border-radius: 15px;
+            position: relative;
+            top: -580px;
+            left: 500px;
+        }
     </style>
 </head>
 <body>
-    <div class="not">
-
-    </div>
-    <form>
+    <form class="frm1">
         <div class="f_content">
-            <h2>Donation Details Entry Form</h2>
-            <div class="content">
+            <div class="content1">
                 <label for="id">User ID</label>
-                <input id="id" name="id" type="text" placeholder="Enter Donor Id">
+                <select name="slt" id="slt">
+                    <option value="User_Id1">User_Id1</option>
+                    <option value="User_Id2">User_Id2</option>
+                    <option value="User_Id3">User_Id3</option>
+                    <option value="User_Id4">User_Id4</option>
+                </select>
             </div>
-            <div class="content">
+            <div class="content1">
                 <label for="to">To Whom</label>
-                <input id="to" name="to" type="text" placeholder="Enter Patient Id">
+                <select name="slt" id="slt">
+                    <option value="Patient_Id1">Patient_Id1</option>
+                    <option value="Patient_Id2">Patient_Id2</option>
+                    <option value="Patient_Id3">Patient_Id3</option>
+                    <option value="Patient_Id4">Patient_Id4</option>
+                </select> 
             </div>
             <div class="content">
                 <label for="hos">Which Hospital</label>
                 <input id="hos" name="hospital" type="text" placeholder="Enter Hospita Name">
             </div>
-
-            <div class="content">
-                <label for="dr_name">Date Of Donation/Surgery</label>
-                <input id="date" name="date" type="date" placeholder="Date of Surgery/Donation">
-            </div>
-
             <div class="content">
                 <label for="dr_name">Doctor Name</label>
                 <input id="dr_name" name="name" type="text" placeholder="Enter Doctor Name">
             </div>
-            <div class="Rem_cont">
+            <div class="Rem_cont"> 
                 <label for="rem">Remarks</label>
                 <textarea id="rem" name="remarks" placeholder="Type Here..."></textarea>
             </div>
@@ -126,6 +202,40 @@
                 <button>Update</button>
             </div>
         </div>
+    </form>
+    <form class="frm2"> 
+        <div class="hed"><h2>Donor</h2></div>
+        <table>
+           <tr>
+            <td class="tds">Name</td><td><span>efefef</span></td>
+           </tr>
+           <tr>
+            <td class="tds">Age</td><td><span>efefef</span></td>
+           </tr>
+           <tr>
+            <td class="tds">Blood Group</td><td><span>efefef</span></td>
+           </tr>
+           <tr>
+            <td class="tds">Organ Type</td><td><span>efefef</span></td>
+           </tr>
+        </table>
+    </form>
+    <form class="frm3"> 
+        <div class="hed"><h2>Patient</h2></div>
+        <table>
+           <tr>
+            <td class="tds">Name</td><td><span>efefef</span></td>
+           </tr>
+           <tr>
+            <td class="tds">Age</td><td><span>efefef</span></td>
+           </tr>
+           <tr>
+            <td class="tds">Blood Group</td><td><span>efefef</span></td>
+           </tr>
+           <tr>
+            <td class="tds">Organ Needed</td><td><span>efefef</span></td>
+           </tr>
+        </table>
     </form>
 </body>
 </html>
